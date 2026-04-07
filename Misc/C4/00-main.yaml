@@ -1,0 +1,31 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    out0:
+      dhcp4: true
+      dhcp6: false
+      match:
+        macaddress: aa:aa:aa:aa:aa:aa
+      set-name: out0
+      optional: true
+    lan0:
+      match:
+        macaddress: bb:bb:bb:bb:bb:bb
+      set-name: lan0
+      optional: true
+    lan1:
+      match:
+        macaddress: cc:cc:cc:cc:cc:cc
+      set-name: lan1
+      optional: true
+    wlan0:
+      match:
+        macaddress: dd:dd:dd:dd:dd:dd
+      set-name: wlan0
+      optional: true
+    wlan1:
+      match:
+        macaddress: ee:ee:ee:ee:ee:ee
+      set-name: wlan1
+      optional: true
