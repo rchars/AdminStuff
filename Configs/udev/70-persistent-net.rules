@@ -1,0 +1,11 @@
+# Rename interfaces to e[0-9] and w[0-9]
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="00:11:22:33:44:55", NAME="e0"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="66:77:88:99:aa:bb", NAME="e1"
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="cc:dd:ee:ff:00:11", NAME="e2"
+
+# Enable WOL for e1 and e2
+SUBSYSTEM=="net", ACTION=="add" NAME=="e1", RUN+="/usr/sbin/ethtool -s $name wol g"
+SUBSYSTEM=="net", ACTION=="add" NAME=="e2", RUN+="/usr/sbin/ethtool -s $name wol g"
+
+# Disable WOL for e0
+SUBSYSTEM=="net", ACTION=="add" NAME=="e0", RUN+="/usr/sbin/ethtool -s $name wol d"

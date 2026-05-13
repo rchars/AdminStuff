@@ -1,0 +1,12 @@
+---
+- name: "Check if WoL is enabled"
+  hosts: hosts
+  become: true
+  gather_facts: true
+  tasks:
+    - name: "Run ethtool command"
+      ansible.builtin.shell: "ethtool eth0 | egrep Wake"
+      register: result
+    - name: "Print result"  
+      ansible.builtin.debug:
+        var: result.stdout_lines

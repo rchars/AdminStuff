@@ -1,0 +1,64 @@
+---
+- name: "Cleanup hosts"
+  hosts: hosts
+  become: true
+  gather_facts: true
+  tasks:
+  - name: "Stop, disable and mask unattended-upgrades service"
+    ansible.builtin.systemd_service:
+      name: "unattended-upgrades.service"
+      state: "stopped"
+      enabled: false
+      masked: true
+  - name: "Remove rules.d directory with all rules"
+    ansible.builtin.file:
+      path: "/etc/udev/rules.d"
+      state: absent
+  - name: "Recreate rules.d directory"
+    ansible.builtin.file:
+      path: "/etc/udev/rules.d"
+      state: directory
+      owner: "root"
+      group: "root"
+      mode: "0755"
+  - name: "Create 70-persistent-net.rules file (enable WOL)"
+    ansible.builtin.copy:
+      src: "./hosts/70-persistent-net.rules"
+      dest: "/etc/udev/rules.d/70-persistent-net.rules"
+      owner: "root"
+      group: "root"
+      mode: "0644"
+  - name: "Enable udev service"
+    ansible.builtin.systemd_service:
+      name: "udev.service"
+      state: "started"
+      enabled: false
+      masked: false
+  - name: "Replace default grub file with custom one (rename NICs)"
+    ansible.builtin.copy:
+      src: "./hosts/grub"
+      dest: "/etc/default/grub"
+      owner: "root"
+      group: "root"
+      mode: "0644"
+  - name: "Remove netplan directory with all configs"
+    ansible.builtin.file:
+      path: "/etc/netplan"
+      state: absent
+  - name: "Recreate netplan directory"
+    ansible.builtin.file:
+      path: "/etc/netplan"
+      state: directory
+      owner: "root"
+      group: "root"
+      mode: "0755"
+  - name: "Add 00-dhcp4.yaml file to netplan directory"
+    ansible.builtin.copy:
+      src: "./hosts/00-dhcp4.yaml"
+      dest: "/etc/netplan/00-dhcp4.yaml"
+      owner: "root"
+      group: "root"
+      mode: "0600"
+  - name: "Run update-grub command"
+    ansible.builtin.command:
+      cmd: "/usr/sbin/update-grub"

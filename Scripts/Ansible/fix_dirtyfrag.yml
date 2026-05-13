@@ -1,0 +1,21 @@
+---
+- name: "Mitigate DrityFrag vulnerability"
+  gather_facts: true
+  hosts: hosts
+  become: true
+  tasks:
+    - name: "Blacklist esp4 module"
+      ansible.builtin.shell:
+        cmd: "echo 'install esp4 /bin/false' | tee /etc/modprobe.d/drity-frag.conf"
+    - name: "Blacklist esp6 module"
+      ansible.builtin.shell:
+        cmd: "echo 'install esp6 /bin/false' | tee /etc/modprobe.d/drity-frag.conf"
+    - name: "Blacklist rxrpc module"
+      ansible.builtin.shell:
+        cmd: "echo 'install rxrpc /bin/false' | tee /etc/modprobe.d/drity-frag.conf"
+    - name: "Update all initramfs"
+      ansible.builtin.shell:
+        cmd: "update-initramfs -u -k all"
+    - name: "Unload esp4 esp6 rxrpc modules"
+      ansible.builtin.shell:
+        cmd: "rmmod esp4 esp6 rxrpc 2>/dev/null"
