@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+
+  <g id="active-center">
+    <rect width="20" height="20" fill="none"/>
+
+    <!-- full background so KDE cannot "lose" it -->
+    <rect x="2" y="2" width="16" height="16" fill="#003300"/>
+
+    <!-- big X (block style, always visible) -->
+    <rect x="5" y="9" width="10" height="2" fill="#00ff33"
+          transform="rotate(45 10 10)"/>
+    <rect x="5" y="9" width="10" height="2" fill="#00ff33"
+          transform="rotate(-45 10 10)"/>
+  </g>
+
+  <g id="inactive-center">
+    <rect width="20" height="20" fill="#001a00"/>
+    <rect x="6" y="9" width="8" height="2" fill="#0a5a2a"
+          transform="rotate(45 10 10)"/>
+    <rect x="6" y="9" width="8" height="2" fill="#0a5a2a"
+          transform="rotate(-45 10 10)"/>
+  </g>
+
+</svg>

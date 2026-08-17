@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+
+  <g id="active-center">
+    <rect width="20" height="20" fill="none"/>
+
+    <rect x="2" y="8" width="16" height="4" fill="#003300"/>
+    <rect x="4" y="9" width="12" height="2" fill="#00ff33"/>
+  </g>
+
+  <g id="inactive-center">
+    <rect width="20" height="20" fill="#001a00"/>
+    <rect x="4" y="9" width="12" height="2" fill="#0a5a2a"/>
+  </g>
+
+</svg>

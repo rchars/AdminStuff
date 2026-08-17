@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+
+  <g id="active-center">
+    <rect width="20" height="20" fill="none"/>
+
+    <!-- back window -->
+    <rect x="4" y="4" width="10" height="10" fill="#003300"/>
+
+    <!-- front window -->
+    <rect x="7" y="7" width="10" height="10" fill="#00ff33"/>
+  </g>
+
+  <g id="inactive-center">
+    <rect width="20" height="20" fill="#001a00"/>
+
+    <rect x="4" y="4" width="10" height="10" fill="#0a5a2a"/>
+    <rect x="7" y="7" width="10" height="10" fill="#0a5a2a"/>
+  </g>
+
+</svg>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="150" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ================= ACTIVE ================= -->
+
+  <!-- CENTER (ACTIVE TITLEBAR BACKGROUND) -->
+  <rect id="decoration-center"
+        x="0" y="0"
+        width="200" height="150"
+        fill="#00ff33"/>
+
+  <!-- ACTIVE FRAME -->
+
+  <!-- TOP -->
+  <g id="decoration-top" transform="translate(13,30)">
+    <rect x="9" y="9" width="66" height="8"
+          fill="#00ff33"/>
+  </g>
+
+  <!-- LEFT -->
+  <g id="decoration-left" transform="translate(13,30)">
+    <rect x="9" y="17" width="8" height="58"
+          fill="#00ff33"/>
+  </g>
+
+  <!-- RIGHT -->
+  <use href="#decoration-left"
+       id="decoration-right"
+       transform="matrix(-1,0,0,1,110,0)"/>
+
+  <!-- BOTTOM -->
+  <g id="decoration-bottom" transform="translate(13,30)">
+    <rect x="9" y="67" width="66" height="8"
+          fill="#00ff33"/>
+  </g>
+
+  <!-- CORNERS -->
+  <g id="decoration-topleft" transform="translate(13,30)">
+    <rect x="9" y="9" width="8" height="8"
+          fill="#00ff33"/>
+  </g>
+
+  <use href="#decoration-topleft"
+       id="decoration-topright"
+       transform="matrix(-1,0,0,1,110,0)"/>
+
+  <use href="#decoration-topleft"
+       id="decoration-bottomleft"
+       transform="matrix(1,0,0,-1,0,140)"/>
+
+  <use href="#decoration-topleft"
+       id="decoration-bottomright"
+       transform="matrix(-1,0,0,-1,110,140)"/>
+
+  <!-- ================= INACTIVE ================= -->
+
+  <!-- INACTIVE TITLEBAR BACKGROUND -->
+  <rect id="decoration-inactive-center"
+        x="0" y="0"
+        width="200" height="150"
+        fill="#222222"/>
+
+  <!-- INACTIVE FRAME -->
+
+  <!-- TOP -->
+  <g id="decoration-inactive-top" transform="translate(115,30)">
+    <rect x="9" y="9" width="66" height="8"
+          fill="#222222"/>
+  </g>
+
+  <!-- LEFT -->
+  <g id="decoration-inactive-left" transform="translate(115,30)">
+    <rect x="9" y="17" width="8" height="58"
+          fill="#222222"/>
+  </g>
+
+  <!-- RIGHT -->
+  <use href="#decoration-inactive-left"
+       id="decoration-inactive-right"
+       transform="matrix(-1,0,0,1,314,0)"/>
+
+  <!-- BOTTOM -->
+  <g id="decoration-inactive-bottom" transform="translate(115,30)">
+    <rect x="9" y="67" width="66" height="8"
+          fill="#222222"/>
+  </g>
+
+  <!-- CORNERS -->
+  <g id="decoration-inactive-topleft" transform="translate(115,30)">
+    <rect x="9" y="9" width="8" height="8"
+          fill="#222222"/>
+  </g>
+
+  <use href="#decoration-inactive-topleft"
+       id="decoration-inactive-topright"
+       transform="matrix(-1,0,0,1,314,0)"/>
+
+  <use href="#decoration-inactive-topleft"
+       id="decoration-inactive-bottomleft"
+       transform="matrix(1,0,0,-1,0,140)"/>
+
+  <use href="#decoration-inactive-topleft"
+       id="decoration-inactive-bottomright"
+       transform="matrix(-1,0,0,-1,314,140)"/>
+
+</svg>
