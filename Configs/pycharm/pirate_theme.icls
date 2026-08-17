@@ -1,0 +1,235 @@
+<scheme name="pirate_theme" version="142" parent_scheme="Default">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="ide">PyCharmCore</property>
+    <property name="ideVersion">2025.3.2.1.0.0</property>
+    <property name="originalScheme">pirate_theme</property>
+  </metaInfo>
+  <option name="LINE_SPACING" value="1.0" />
+  <option name="EDITOR_FONT_SIZE" value="20" />
+  <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+  <colors>
+    <option name="ADDED_LINES_COLOR" value="7FC784" />
+    <option name="ANNOTATIONS_COLOR" value="5A5D6B" />
+    <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="000000" />
+    <option name="CARET_ROW_COLOR" value="F5F8FE" />
+    <option name="DELETED_LINES_COLOR" value="767A8A" />
+    <option name="DIFF_SEPARATORS_BACKGROUND" value="E4E6EB" />
+    <option name="DOCUMENTATION_COLOR" value="FFFFFF" />
+    <option name="EDITOR_BACKGROUND" value="FFFFFF" />
+    <option name="ERROR_HINT" value="FFE8E8" />
+    <option name="FILESTATUS_ADDED" value="067D17" />
+    <option name="FILESTATUS_COPIED" value="067D17" />
+    <option name="FILESTATUS_DELETED" value="6C707E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="6C707E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="8C4F00" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS" value="DE1B2E" />
+    <option name="FILESTATUS_MERGED" value="643CB8" />
+    <option name="FILESTATUS_MODIFIED" value="0033B3" />
+    <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="0033B3" />
+    <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="0033B3" />
+    <option name="FILESTATUS_RENAMED" value="0033B3" />
+    <option name="FILESTATUS_UNKNOWN" value="B23247" />
+    <option name="FILESTATUS_addedOutside" value="067D17" />
+    <option name="FILESTATUS_changelistConflict" value="DE1B2E" />
+    <option name="FILESTATUS_modifiedOutside" value="0033B3" />
+    <option name="GUTTER_BACKGROUND" value="FFFFFF" />
+    <option name="IGNORED_ADDED_LINES_BORDER_COLOR" value="7FC784" />
+    <option name="IGNORED_DELETED_LINES_BORDER_COLOR" value="767A8A" />
+    <option name="IGNORED_MODIFIED_LINES_BORDER_COLOR" value="88ADF7" />
+    <option name="INDENT_GUIDE" value="EBECF0" />
+    <option name="INFORMATION_HINT" value="FFFFFF" />
+    <option name="LINE_NUMBERS_COLOR" value="AEB3C2" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="AEB3C2" />
+    <option name="LOOKUP_COLOR" value="FFFFFF" />
+    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="62B3B3" />
+    <option name="METHOD_SEPARATORS_COLOR" value="DFE1E5" />
+    <option name="MODIFIED_LINES_COLOR" value="88ADF7" />
+    <option name="NOTIFICATION_BACKGROUND" value="FFF8E3" />
+    <option name="PROMOTION_PANE" value="E7EFFD" />
+    <option name="QUESTION_HINT" value="F5F8FE" />
+    <option name="RECENT_LOCATIONS_SELECTION" value="E7EFFD" />
+    <option name="RIGHT_MARGIN_COLOR" value="EBECF0" />
+    <option name="SELECTED_INDENT_GUIDE" value="AEB3C2" />
+    <option name="SELECTION_BACKGROUND" value="A6D2FF" />
+    <option name="SELECTION_FOREGROUND" value="000000" />
+    <option name="TEARLINE_COLOR" value="D4D4D4" />
+    <option name="VCS_ANNOTATIONS_COLOR_1" value="A1BEF7" />
+    <option name="VCS_ANNOTATIONS_COLOR_2" value="C9DAFB" />
+    <option name="VCS_ANNOTATIONS_COLOR_3" value="DEE8FC" />
+    <option name="VCS_ANNOTATIONS_COLOR_4" value="EDF2FA" />
+    <option name="VCS_ANNOTATIONS_COLOR_5" value="F7F8FA" />
+    <option name="VISUAL_INDENT_GUIDE" value="EBECF0" />
+    <option name="WHITESPACES_MODIFIED_LINES_COLOR" value="F7E2CB" />
+  </colors>
+  <attributes>
+    <option name="BAD_CHARACTER">
+      <value />
+    </option>
+    <option name="CUSTOM_KEYWORD2_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="7f" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CUSTOM_KEYWORD3_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="7f" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CUSTOM_KEYWORD4_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="7f" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DEFAULT_ATTRIBUTE" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="5500" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="DEFAULT_BRACES">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_BRACKETS">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_COMMA">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="5500" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="DEFAULT_DOT">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_ENTITY" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_FUNCTION_DECLARATION">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_HIGHLIGHTED_REFERENCE" baseAttributes="DEFAULT_STRING" />
+    <option name="DEFAULT_INSTANCE_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_INVALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="a85700" />
+      </value>
+    </option>
+    <option name="DEFAULT_KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="7f" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="DEFAULT_LABEL" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="5500" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="DEFAULT_METADATA" baseAttributes="TEXT" />
+    <option name="DEFAULT_NUMBER">
+      <value>
+        <option name="FOREGROUND" value="ff0000" />
+      </value>
+    </option>
+    <option name="DEFAULT_OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_PARENTHS">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_PREDEFINED_SYMBOL" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_REASSIGNED_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="DEFAULT_REASSIGNED_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="DEFAULT_SEMICOLON">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="DEFAULT_STATIC_FIELD" baseAttributes="DEFAULT_IDENTIFIER" />
+    <option name="DEFAULT_STATIC_METHOD" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="DEFAULT_STRING">
+      <value>
+        <option name="FOREGROUND" value="a85700" />
+      </value>
+    </option>
+    <option name="DEFAULT_TAG" baseAttributes="TEXT" />
+    <option name="DEFAULT_TEMPLATE_LANGUAGE_COLOR" baseAttributes="TEXT" />
+    <option name="DEFAULT_VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="a85700" />
+      </value>
+    </option>
+    <option name="PY.BUILTIN_NAME" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
+    <option name="PY.KEYWORD_ARGUMENT" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PY.PREDEFINED_DEFINITION" baseAttributes="DEFAULT_PREDEFINED_SYMBOL" />
+    <option name="PY.PREDEFINED_USAGE">
+      <value />
+    </option>
+    <option name="PY.SELF_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PYTHON_DECORATOR">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="PYTHON_DUNDER_METHOD">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="PYTHON_EXCEPTION">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="PYTHON_GLOBAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="PYTHON_SELF">
+      <value>
+        <option name="FOREGROUND" value="0" />
+      </value>
+    </option>
+    <option name="TEXT">
+      <value>
+        <option name="FOREGROUND" value="0" />
+        <option name="BACKGROUND" value="ffffff" />
+      </value>
+    </option>
+  </attributes>
+</scheme>
